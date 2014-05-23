@@ -1,0 +1,51 @@
+{
+  "data": {
+    "user": [
+      {
+        "username": "admin",
+        "password": "admin",
+        "createdAt": "2014-05-22T08:47:36.749Z",
+        "updatedAt": "2014-05-22T08:47:36.749Z",
+        "id": 1
+      },
+      {
+        "username": "user",
+        "password": "user",
+        "createdAt": "2014-05-22T12:20:04.859Z",
+        "updatedAt": "2014-05-22T12:20:04.859Z",
+        "id": 2
+      }
+    ]
+  },
+  "schema": {
+    "user": {
+      "username": {
+        "type": "string",
+        "unique": true
+      },
+      "password": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer",
+        "autoIncrement": true,
+        "defaultsTo": "AUTO_INCREMENT",
+        "primaryKey": true,
+        "unique": true
+      },
+      "createdAt": {
+        "type": "datetime",
+        "default": "NOW"
+      },
+      "updatedAt": {
+        "type": "datetime",
+        "default": "NOW"
+      }
+    }
+  },
+  "counters": {
+    "user": {
+      "id": 2
+    }
+  }
+}
